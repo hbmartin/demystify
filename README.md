@@ -26,7 +26,7 @@
 <h3 align="center">Demystify</h3>
 
   <p align="center">
-    Generate API Specifications in Real Time for Any API
+    Generate OpenAPI Specifications in Real Time for Any API
     <br />
     <a href="https://github.com/AndrewWalsh/demystify"><strong>Understand API Behaviour »</strong></a>
     <br />
@@ -199,7 +199,7 @@ See test files for more information on usage.
     <img
       src="./assets/1_showing_multiple.png"
       alt="some paths in the openapi specification, including one that has been parameterised" width="400">
-    <p>Demystify identifies path parameters in the underlying API automatically<br/> and reveals its underlying contract</p>
+    <p>Demystify identifies path parameters automatically<br/> without manual input</p>
   </div>
 
   <br />
