@@ -1,4 +1,4 @@
-import{d as f,c as $,K as n,B as l,F as B,R as S,S as v,Q as i,V as b,U as w,a3 as k,D as o,u as h}from"./index-Bvmx_tWR.js";import{b as D}from"./DeleteSidebarListElement.vue-D239cwOv.js";const x=`          .:=+++++=================-
+import{d as f,c as $,K as n,B as l,F as B,R as S,S as v,Q as i,V as b,U as w,a3 as k,D as o,u as h}from"./index-XT8p-Ppy.js";import{b as D}from"./DeleteSidebarListElement.vue-BGOmXf3V.js";const x=`          .:=+++++=================-
          .--#*                       :.
         .-:-**                        -.
       .:-::-+*                        =:
