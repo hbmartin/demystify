@@ -81,6 +81,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+https://github.com/user-attachments/assets/5fdd075f-6191-4714-8fea-22b81c6459a2
+
 Demystify is a suite of tools designed to help understand API behaviour. It generates accurate OpenAPI 3.1 specifications in real time from live network traffic or HAR files. The desktop app achieves this with a built-in proxy, while the browser extension works automatically for all requests in a given tab. The CLI tool works directly on files, and the library can be used in other contexts such as middleware to programmatically generate API specifications.
 
 It identifies path parameters automatically without manual intervention. Data in the generated specification reflects all observed information across multiple status codes and mime types for request and response headers, bodies, query parameters, path parameters, and cookies for each endpoint.
