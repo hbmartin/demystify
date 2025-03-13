@@ -1,0 +1,37 @@
+{
+  "name": "@demystify/ui",
+  "description": "various ui components",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./src/index.ts",
+  "scripts": {
+    "lint": "eslint . --max-warnings 0",
+    "check-types": "tsc --noEmit",
+    "shadcn": "npx shadcn-vue@latest"
+  },
+  "dependencies": {
+    "demystify-lib": "*",
+    "@demystify/helpers": "*",
+    "@scalar/api-reference": "^1.25.122",
+    "@tanstack/vue-table": "^8.21.2",
+    "@types/har-format": "^1.2.16",
+    "@vueuse/core": "^12.7.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-vue-next": "^0.475.0",
+    "openapi3-ts": "^4.4.0",
+    "reka-ui": "^2.0.2",
+    "tailwind-merge": "^3.0.2",
+    "tailwindcss-animate": "^1.0.7",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "@vue/tsconfig": "^0.7.0",
+    "autoprefixer": "^10.4.20",
+    "tailwindcss": "^3.4.17",
+    "typescript": "5.7.3",
+    "vue-tsc": "^2.2.4"
+  }
+}

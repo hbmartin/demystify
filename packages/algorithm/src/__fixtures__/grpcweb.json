@@ -1,0 +1,45 @@
+{
+  "log": {
+    "version": "1.2",
+    "entries": [
+      {
+        "request": {
+          "method": "POST",
+          "url": "https://api.example.com/my.service/MyMethod",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/grpc-web+proto"
+            },
+            {
+              "name": "accept",
+              "value": "application/grpc-web+proto"
+            },
+            {
+              "name": "x-grpc-web",
+              "value": "1"
+            }
+          ],
+          "postData": {
+            "mimeType": "application/grpc-web+proto",
+            "text": "AAAAAAA="
+          }
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/grpc-web+proto"
+            }
+          ],
+          "content": {
+            "mimeType": "application/grpc-web+proto",
+            "text": "AAAAAAA="
+          }
+        }
+      }
+    ]
+  }
+}

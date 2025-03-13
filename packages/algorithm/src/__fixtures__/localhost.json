@@ -1,0 +1,74 @@
+{
+  "log": {
+    "entries": [
+      {
+        "_id": "41633f8f832c834e",
+        "startedDateTime": "2025-03-04T07:46:08.358682Z",
+        "time": 1,
+        "request": {
+          "method": "POST",
+          "url": "http://localhost:3000/",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "Content-Length",
+              "value": "20"
+            },
+            {
+              "name": "Host",
+              "value": "localhost:3000"
+            },
+            {
+              "name": "User-Agent",
+              "value": "curl/8.7.1"
+            },
+            {
+              "name": "Accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "postData": {
+            "mimeType": "application/json",
+            "params": [],
+            "text": "{ \"test\": \"teddst\" }"
+          },
+          "headersSize": -1,
+          "bodySize": 20
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 26,
+            "mimeType": "application/json",
+            "text": "eyJtZXNzYWdlIjoiSGVsbG8gV29ybGQifQo=",
+            "encoding": "base64"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1
+        },
+        "cache": {},
+        "timings": {
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        }
+      }
+    ]
+  }
+}

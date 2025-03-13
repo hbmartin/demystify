@@ -1,0 +1,8 @@
+{
+  "extends": "@demystify/typescript-config/base.json",
+  "compilerOptions": {
+    "plugins": []
+  },
+  "include": ["**/*.ts", "**/*.tsx", "src/gql"],
+  "exclude": ["node_modules"]
+}

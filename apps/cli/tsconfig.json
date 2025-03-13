@@ -1,0 +1,14 @@
+{
+  "extends": "@demystify/typescript-config/base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "module": "ESNext",
+    "target": "ES2015",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "downlevelIteration": true
+  },
+  "include": ["src/index.ts"],
+  "exclude": ["node_modules", "dist"]
+}

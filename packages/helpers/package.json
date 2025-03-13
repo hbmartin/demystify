@@ -1,0 +1,17 @@
+{
+  "name": "@demystify/helpers",
+  "description": "code that is shared across apps and packages",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./src/index.ts",
+  "scripts": {
+    "lint": "eslint . --max-warnings 0",
+    "check-types": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@types/har-format": "^1.2.16"
+  },
+  "devDependencies": {
+  }
+}

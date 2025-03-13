@@ -1,0 +1,98 @@
+import {
+  DocumentNode,
+  parse,
+  OperationDefinitionNode,
+  FieldNode,
+} from "graphql";
+
+import { HarGraphQL, Manager } from "./types/index.js";
+import { parseJSON } from "./utils/index.js";
+
+type Data = {
+  [host: string]: { [pathname: string]: { [query: string]: DocumentNode } };
+};
+type Output = any;
+
+type KeyValue = { key: string; value: FieldNode };
+const getKeyValue = (item: FieldNode): KeyValue => ({
+  key: item.name.value,
+  value: item,
+});
+
+type FieldDefMap = { [query: string]: FieldNode };
+const getFieldDefMap = (
+  definitions: OperationDefinitionNode[]
+): FieldDefMap => {
+  const mapKv: FieldDefMap = {};
+  definitions.forEach((op) => {
+    if (op.kind === "OperationDefinition" && op.operation === "query") {
+      op.selectionSet.selections.forEach((item) => {
+        if (item.kind === "Field" && item.name && item.name.value) {
+          console.log(item.name.value);
+          const { key, value } = getKeyValue(item);
+          // Simple approach, just overwrite by root field
+          mapKv[key] = value;
+        }
+      });
+    }
+  });
+  return mapKv;
+};
+
+const mergeDocumentNodes = (
+  nodeDest: DocumentNode,
+  nodeSrc: DocumentNode,
+  queryMapping: Data["host"]["pathname"]
+): FieldDefMap => {
+  console.log("a");
+  const nodeDestMap = getFieldDefMap(
+    nodeDest.definitions as OperationDefinitionNode[]
+  );
+  const nodeSrcMap = getFieldDefMap(
+    nodeSrc.definitions as OperationDefinitionNode[]
+  );
+  const merged = { ...nodeDestMap, ...nodeSrcMap };
+  return merged;
+};
+
+const getQueryKey = (doc: DocumentNode): string => {
+  const op = doc.definitions[0] as OperationDefinitionNode;
+  const field = op.selectionSet.selections[0] as FieldNode;
+  const name = field.name.value;
+  return name;
+}
+
+export class GraphQlManager extends Manager<Data, Output> {
+  data: Data;
+  constructor() {
+    super();
+    this.data = {};
+  }
+
+  upsert = (data: HarGraphQL): void => {
+    const url = new URL(data.request.url);
+    const { host, pathname } = url;
+    if (data.request.postData?.text) {
+      const parsed = parseJSON(data.request.postData.text) as { query: string };
+      const query = parse(parsed.query);
+      const key = getQueryKey(query);
+      this.data[host] ??= {};
+      this.data[host][pathname] ??= {};
+      if (this.data[host][pathname][key]) {
+        // Exists, update
+        const currentDataQueries = this.data[host][pathname];
+        const currentDataQuery = currentDataQueries[key];
+        if (!currentDataQuery) throw new Error("gql: no current data");
+        const merged = mergeDocumentNodes(currentDataQuery, query, currentDataQueries);
+        this.data[host][pathname] = merged;
+      } else {
+        // Doesn't exist, create
+        this.data[host][pathname][key] = query;
+      }
+    }
+  }
+
+  generate = (): Output => {
+    return this.data;
+  }
+}

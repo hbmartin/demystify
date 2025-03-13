@@ -1,0 +1,230 @@
+{
+  "_connectionId": "47539",
+  "_initiator": {},
+  "_priority": "High",
+  "_resourceType": "xhr",
+  "cache": {},
+  "connection": "443",
+  "pageref": "page_10",
+  "request": {
+      "method": "post",
+      "url": "https://example.com/api/citation",
+      "httpVersion": "http/2.0",
+      "headers": [
+          {
+              "name": ":authority",
+              "value": "example.com"
+          },
+          {
+              "name": ":method",
+              "value": "POST"
+          },
+          {
+              "name": ":path",
+              "value": "/api/citation-generator/sources"
+          },
+          {
+              "name": ":scheme",
+              "value": "https"
+          },
+          {
+              "name": "accept",
+              "value": "application/json, text/plain, */*"
+          },
+          {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br, zstd"
+          },
+          {
+              "name": "accept-language",
+              "value": "en-GB,en-US;q=0.9,en;q=0.8"
+          },
+          {
+              "name": "content-length",
+              "value": "0"
+          },
+          {
+              "name": "cookie",
+              "value": "intercom-id-jtijbv5y=17a55681-da69-496f-8908-1379f0ae08e9; intercom-device-id-jtijbv5y=f32322c2-09b4-468f-a832-5315f40fa989; google_tap_skipped=1; ads_marketing_cookie=%7B%7D; csrftoken=FAzZZFuJhBnk0S4nP83RpEEGycQChTbJ; messages=%223c32f3cd7e2c332c00135b0a473eccd2175844b7%24%5B%5B%5C%22__json_message%5C%22%5C0540%5C05425%5C054%5C%22Successfully%20signed%20in%20as%20scispace%40sootmail.com.%5C%22%5D%5D%22; refreshToken=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbmZvIjoiZ0FBQUFBQm51SmFnS09hX2EtaHpvRzQtd1VIY2F1Wk9laDJNWVVidnBjV2FDNkxBM0RBRjFsQTZDdC03SlNtZUcyaVlhaXlQc1F4bXJiLThaUHpWanN3TnR5V2UwUGZrTUdFQ0RMY3RlVVA4ZHVpZVpOVEdKQy0waHJ1aDZMaHpjSUp6cEpmR043LVFSR3FFNmFiemZpeE5TZkpubTJfZ2dDMmIweU83REVLejBDRUdGODBUSFpEck1qTG5ldDA1RFBJblJCZnBIU1BZazBLWWhBMzBQMVJNaC1yVGdhbnI1Zz09IiwiaXNzIjoiaHR0cHM6Ly90eXBlc2V0LmlvLyIsImV4cCI6MTc0MTAxNDQzMiwiaWF0IjoxNzQwMTUwNDMyfQ.RcDF91znJ5NdhDS28MgfKALxn36k0bGP507mm6rUUAqTcdc0AA8I5HJjs-m2mjmDsU3yJPp9rPqgb8eQt6H6h4ytDW7DaZBCs4o1Vri8WdGiKs3iNfUT_bLgWPbzMQ_9sjMT3JB88HL1dNH6zFSmFnI3BJvrCQar5BasIGFvGrvnV9z1kv5MxkfOBrJ3yV1UDtF-NO_lgB7zRh9YhE8EHksLqaZz9Amzn11wtyWe439xn4DMuSMsyHD506FS_K2oDr4kYRmbuCfLNvpX0-Cc6J5caTFDAGWs4wibPUOXXmqzNdlAtvz8t8VQf7BB8LAK17E2Uv5kbx_6tONkZCMueA; sessionid=c883ivjcovmzjzw3t1sesmi84uk9hvfp; intercom-session-jtijbv5y=SXE3MDlyK1dMdU4zenVqeDFwTUhSNHE2SkFNL1Y5bDIyMGdBVENhMU1YTEpLTU45b3NZOVYyYkw1eHIvZ1lIRmsyVVBVY3NTTW5kdDc0QTVFYmlRN3BCMkZLNDlQWS9Kd0lTczl5MkszYU09LS01MWlUbVAxa3VEd2Mxd2dzbnJCUWhBPT0=--560baa1de8f2a88ec47f86b03a9287634dfef4e1; access_token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJUMWpuUUxqcWxaS2N2dHNvUTNza0tVdkI0TnYiLCJ0eXAiOiJTQ0lTUEFDRV9VU0VSIiwiaXNzIjoiaHR0cHM6Ly90eXBlc2V0LmlvIiwiaWF0IjoxNzQwMTUyNjQ4LCJleHAiOjE3NDg3OTI2NDh9.fmtEMK5HOttfbyUX5SHKKlFHB2B3LX663EZi7ssjWOm9PdnnxX6LiqLiPVw9UowDoUDa1Mt_TguRBkvn08MUHlR1u7QJKDYHuq3v8rUoKrd0JiICqb_399RLrj8Z3RIsP2Uw_nDuC05__475ttrjyE_ZcJBOyJRRJdGm1mNJ-Vl4X7DFGsz9NRM3i5mCTHEOTT5gWAS-K8uYqJUJ8e9RSRGNbjddMOE-W5DlEtfJCo5BY6ePw0kLflcOMMiixyOfqBniszv4-63iWDtjoK1amIqXCevuICyrnlZpc5UfO91ra6ySoP7uA7Yvqck_gI_Hk6W0p5BxBsLPTHnujXcVgg"
+          },
+          {
+              "name": "origin",
+              "value": "https://example.com"
+          },
+          {
+              "name": "priority",
+              "value": "u=1, i"
+          },
+          {
+              "name": "referer",
+              "value": "https://example.com/search"
+          },
+          {
+              "name": "sec-ch-ua",
+              "value": "\"Not(A:Brand\";v=\"99\", \"Google Chrome\";v=\"133\", \"Chromium\";v=\"133\""
+          },
+          {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+          },
+          {
+              "name": "sec-ch-ua-platform",
+              "value": "\"macOS\""
+          },
+          {
+              "name": "sec-fetch-dest",
+              "value": "empty"
+          },
+          {
+              "name": "sec-fetch-mode",
+              "value": "cors"
+          },
+          {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+          },
+          {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+          }
+      ],
+      "queryString": [],
+      "cookies": [
+          {
+              "name": "intercom-id-jtijbv5y",
+              "value": "17a55681-da69-496f-8908-1379f0ae08e9",
+              "path": "/",
+              "domain": ".example.com",
+              "expires": "2025-11-18T15:33:37.000Z",
+              "httpOnly": false,
+              "secure": false,
+              "sameSite": "Lax"
+          },
+          {
+              "name": "intercom-device-id-jtijbv5y",
+              "value": "f32322c2-09b4-468f-a832-5315f40fa989",
+              "path": "/",
+              "domain": ".example.com",
+              "expires": "2025-11-18T15:49:42.000Z",
+              "httpOnly": false,
+              "secure": false,
+              "sameSite": "Lax"
+          },
+          {
+              "name": "google_tap_skipped",
+              "value": "1",
+              "path": "/",
+              "domain": "example.com",
+              "expires": "2025-02-21T16:59:59.000Z",
+              "httpOnly": false,
+              "secure": false
+          },
+          {
+              "name": "ads_marketing_cookie",
+              "value": "%7B%7D",
+              "path": "/",
+              "domain": "example.com",
+              "expires": "2025-02-28T15:07:16.000Z",
+              "httpOnly": false,
+              "secure": false
+          },
+          {
+              "name": "csrftoken",
+              "value": "abc",
+              "path": "/",
+              "domain": "example.com",
+              "expires": "2026-02-20T15:07:14.579Z",
+              "httpOnly": false,
+              "secure": false
+          },
+          {
+              "name": "refreshToken",
+              "value": "eyJpbmZvIjoiZ0FBQUFBQm51SmFlS09hX2EtaHpaRzQtd1VIY2F1Wk9laDJNWVVidnBjV2FDNkxBM0RBRjFsQTZDdC03SlNtZUcyaVlhaXlQc1F4bXJiLThaUHpWanN3TnR5V2UwUGZrTUdFQ0RMY3RlVVA4ZHVpZVpOVEdKQy0waHJ1aDZMaHpjSUp6cEpmR043LVFSR3FFNmFiemZpeE5TZkpubTJfZ2dDMmIweU83REVLejBDRUdGODBUSFpEck1qTG5ldDA1RFBJblJCZnBIU1BZazBLWWhBMzBQMVJNaC1yVGdhbnI1Zz09IiwiaXNzIjoiaHR0cHM6Ly90eXBlc2V0LmlvLyIsImV4cCI6MTc0MTAxNDQzMiwiaWF0IjoxNzQwMTUwNDMyfQ.RcDF91znJ5NdhDS28MgfKALxn36k0bGP507mm6rUUAqTcdc0AA8I5HJjs-m2mjmDsU3yJPp9rPqgb8eQt6H6h4ytDW7DaZBCs4o1Vri8WdGiKs3iNfUT_bLgWPbzMQ_9sjMT3JB88HL1dNH6zFSmFnI3BJvrCQar5BasIGFvGrvnV9z1kv5MxkfOBrJ3yV1UDtF-NO_lgB7zRh9YhE8EHksLqaZz9Amzn11wtyWe439xn4DMuSMsyHD506FS_K2oDr4kYRmbuCfLNvpX0-Cc6J5caTFDAGWs4wibPUOXXmqzNdlAtvz8t8VQf7BB8LAK17E2Uv5kbx_6tONkZCMueA",
+              "path": "/",
+              "domain": "example.com",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": true
+          },
+          {
+              "name": "sessionid",
+              "value": "c883ivjcovizjzw3t1aesmi84uk9hvfp",
+              "path": "/",
+              "domain": "example.com",
+              "expires": "2025-06-01T15:44:08.129Z",
+              "httpOnly": true,
+              "secure": false
+          },
+          {
+              "name": "intercom-session-jtijbv5y",
+              "value": "SXE3MDlyK1dMdU4zenVpeDFwTUhSNHE2SkFNL1Y5bLIyMGdBVENhMU1YTEpLTU45b3NZOVYyYkw1eHIvZ1lIRmsyVVBVY3NTTW5kdDc0QTVFYmlRN3BCMkZLNDlQWS9Kd0lTczl5MkszYU09LS01MWlUbVAxa3VEd2Mxd2dzbnJCUWhBPT0=--560baa1de8f2a88ec47f86b03a9287634dfef4e1",
+              "path": "/",
+              "domain": ".example.com",
+              "expires": "2025-02-28T15:16:22.000Z",
+              "httpOnly": false,
+              "secure": false,
+              "sameSite": "Lax"
+          },
+          {
+              "name": "access_token",
+              "value": "eyJhbGciOiJSUzI1NiIsInR5lCI6IkpXVCJ9.eyJ1aWQiOiJUOWpuUUxqcWxaS2N2dHNvUTNza0tVdkI0TnYiLCJ0eXAiOiJTQ0lTUEFDRV9VU0VSIiwiaXNzIjoiaHR0cHM6Ly90eXBlc2V0LmlvIiwiaWF0IjoxNzQwMTUyNjQ4LCJleHAiOjE3NDg3OTI2NDh9.fmtEMK5HOttfbyUX5SHKKlFHB2B3LX663EZi7ssjWOm9PdnnxX6LiqLiPVw9UowDoUDa1Mt_TguRBkvn08MUHlR1u7QJKDYHuq3v8rUoKrd0JiICqb_399RLrj8Z3RIsP2Uw_nDuC05__475ttrjyE_ZcJBOyJRRJdGm1mNJ-Vl4X7DFGsz9NRM3i5mCTHEOTT5gWAS-K8uYqJUJ8e9RSRGNbjddMOE-W5DlEtfJCo5BY6ePw0kLflcOMMiixyOfqBniszv4-63iWDtjoK1amIqXCevuICyrnlZpc5UfO91ra6ySoP7uA7Yvqck_gI_Hk6W0p5BxBsLPTHnujXcVgg",
+              "path": "/",
+              "domain": "example.com",
+              "expires": "2025-06-01T15:44:08.128Z",
+              "httpOnly": false,
+              "secure": false
+          }
+      ],
+      "headersSize": -1,
+      "bodySize": 0
+  },
+  "response": {
+      "status": 200,
+      "statusText": "",
+      "httpVersion": "http/2.0",
+      "headers": [
+          {
+              "name": "x-amz-cf-id",
+              "value": "LRe5v_KIY29bSBxBFMsMNG-mWJ8_j5AknYmUIxtEWa1BBK4zAOfefQ=="
+          },
+          {
+              "name": "x-amz-cf-pop",
+              "value": "SIN2-P4"
+          },
+          {
+              "name": "x-cache",
+              "value": "Miss from cloudfront"
+          }
+      ],
+      "cookies": [],
+      "content": {
+          "size": 10876,
+          "mimeType": "application/json",
+          "text": "{\"data\":[{\"display_name\":\"Journal Article\",\"full_slug\":\"article-journal\",\"nlp_identifier\":\"journal_article\",\"filter_identifier\":\"journal-article\",\"sequence\":2,\"is_visible\":true,\"search\":{\"placeholder_text\":\"Enter the URL or title of Journal Article\",\"rules\":{\"webpage\":true,\"text\":true}},\"fields\":[{\"key\":\"title\",\"display_name\":\"Journal Article Title\",\"is_required\":true,\"card_service_key\":\"title\"},{\"key\":\"container-title\",\"display_name\":\"Journal Name\",\"card_service_key\":\"journal\",\"bibtex_key\":\"journal\"},{\"key\":\"issued\",\"display_name\":\"Date\",\"card_service_key\":\"date\"},{\"key\":\"author\",\"display_name\":\"Contributing Authors\",\"card_service_key\":\"authors\"},{\"key\":\"editor\",\"display_name\":\"Editors Name\",\"card_service_key\":null},{\"key\":\"volume\",\"display_name\":\"Volume\",\"card_service_key\":\"volume\"},{\"key\":\"issue\",\"display_name\":\"Issue\",\"card_service_key\":\"issue\"},{\"key\":\"page\",\"display_name\":\"Pages\",\"card_service_key\":\"pages\"},{\"key\":\"URL\",\"display_name\":\"URL\",\"card_service_key\":\"paper_urls\"},{\"key\":\"DOI\",\"display_name\":\"DOI\",\"card_service_key\":\"doi\"},{\"key\":\"publisher\",\"display_name\":\"Publisher Name\",\"card_service_key\":\"publisher\"},{\"key\":\"note\",\"display_name\":\"Extra\",\"card_service_key\":null}],\"field_schema\":{\"title\":\"\",\"container-title\":\"\",\"author\":[{\"family\":\"\",\"given\":\"\"}],\"editor\":[{\"family\":\"\",\"given\":\"\"}],\"volume\":\"\",\"issue\":\"\",\"page\":\"\",\"URL\":\"\",\"DOI\":\"\",\"publisher\":\"\",\"note\":\"\",\"issued\":{\"date-parts\":[[\"yyyy\",\"mm\",\"dd\"]]}}},{\"display_name\":\"Conference Proceeding\",\"full_slug\":\"paper-conference\",\"nlp_identifier\":\"conference_proceeding\",\"filter_identifier\":\"proceedings-article\",\"sequence\":5,\"is_visible\":true,\"search\":{\"placeholder_text\":\"Enter URL or the Title of the Conference\",\"rules\":{\"webpage\":true}},\"fields\":[{\"key\":\"title\",\"display_name\":\"Conference proceeding title\",\"is_required\":true,\"card_service_key\":\"title\"},{\"key\":\"container-title\",\"display_name\":\"Conference Name\",\"card_service_key\":\"conference_series\",\"bibtex_key\":\"journal\"},{\"key\":\"publisher\",\"display_name\":\"Publisher Name\",\"card_service_key\":\"publisher\"},{\"key\":\"event-place\",\"display_name\":\"Publisher Place\",\"bibtex_key\":\"address\",\"card_service_key\":null},{\"key\":\"author\",\"display_name\":\"Contributing Authors\",\"card_service_key\":\"authors\"},{\"key\":\"editor\",\"display_name\":\"Editors Name\",\"card_service_key\":null},{\"key\":\"edition\",\"display_name\":\"Edition\",\"card_service_key\":\"edition\"},{\"key\":\"volume\",\"display_name\":\"Volume\",\"card_service_key\":\"volume\"},{\"key\":\"medium\",\"display_name\":\"Medium\",\"card_service_key\":null},{\"key\":\"page\",\"display_name\":\"Pages\",\"card_service_key\":\"pages\"},{\"key\":\"URL\",\"display_name\":\"URL\",\"card_service_key\":\"paper_urls\"},{\"key\":\"DOI\",\"display_name\":\"DOI\",\"card_service_key\":\"doi\"},{\"key\":\"issued\",\"display_name\":\"Date\",\"card_service_key\":\"date\"},{\"key\":\"source\",\"display_name\":\"Source\",\"card_service_key\":null},{\"key\":\"note\",\"display_name\":\"Extra\",\"card_service_key\":null}],\"field_schema\":{\"title\":\"\",\"container-title\":\"\",\"publisher\":\"\",\"event-place\":\"\",\"author\":[{\"family\":\"\",\"given\":\"\"}],\"editor\":[{\"family\":\"\",\"given\":\"\"}],\"edition\":\"\",\"volume\":\"\",\"medium\":\"\",\"URL\":\"\",\"page\":\"\",\"DOI\":\"\",\"issued\":{\"date-parts\":[[\"yyyy\",\"mm\",\"dd\"]]},\"source\":\"\",\"note\":\"\"}},{\"display_name\":\"Book\",\"full_slug\":\"book\",\"nlp_identifier\":\"book\",\"filter_identifier\":\"book\",\"sequence\":3,\"is_visible\":true,\"search\":{\"placeholder_text\":\"Enter URL or the title of the Book\",\"rules\":{\"webpage\":true}},\"fields\":[{\"key\":\"title\",\"display_name\":\"Book Title\",\"is_required\":true,\"card_service_key\":\"title\"},{\"key\":\"publisher\",\"display_name\":\"Publisher Name\",\"card_service_key\":\"publisher\"},{\"key\":\"publisher-place\",\"display_name\":\"Publisher Place\",\"bibtex_key\":\"address\",\"card_service_key\":null},{\"key\":\"author\",\"display_name\":\"Contributing Authors\",\"card_service_key\":\"authors\"},{\"key\":\"editor\",\"display_name\":\"Editors Name\",\"card_service_key\":null},{\"key\":\"edition\",\"display_name\":\"Edition\",\"card_service_key\":\"edition\"},{\"key\":\"volume\",\"display_name\":\"Volume\",\"card_service_key\":\"volume\"},{\"key\":\"medium\",\"display_name\":\"Medium\",\"card_service_key\":null},{\"key\":\"URL\",\"display_name\":\"URL\",\"card_service_key\":\"paper_urls\"},{\"key\":\"DOI\",\"display_name\":\"DOI\",\"card_service_key\":\"doi\"},{\"key\":\"issued\",\"display_name\":\"Date\",\"card_service_key\":\"date\"},{\"key\":\"source\",\"display_name\":\"Source\",\"card_service_key\":null},{\"key\":\"note\",\"display_name\":\"Extra\",\"card_service_key\":null}],\"field_schema\":{\"title\":\"\",\"publisher\":\"\",\"publisher-place\":\"\",\"edition\":\"\",\"author\":[{\"family\":\"\",\"given\":\"\"}],\"editor\":[{\"family\":\"\",\"given\":\"\"}],\"volume\":\"\",\"medium\":\"\",\"URL\":\"\",\"DOI\":\"\",\"issued\":{\"date-parts\":[[\"yyyy\",\"mm\",\"dd\"]]},\"source\":\"\",\"note\":\"\"}},{\"display_name\":\"Webpage\",\"full_slug\":\"webpage\",\"nlp_identifier\":\"webpage\",\"filter_identifier\":null,\"sequence\":1,\"is_visible\":true,\"search\":{\"placeholder_text\":\"Enter URL\",\"rules\":{\"webpage\":true}},\"fields\":[{\"key\":\"title\",\"display_name\":\"Article title\",\"is_required\":true,\"zotero_metadata_key\":\"title\",\"parser_metadata_key\":\"title\"},{\"key\":\"author\",\"display_name\":\"Contributing Authors\",\"zotero_metadata_key\":\"creators\",\"parser_metadata_key\":null},{\"key\":\"URL\",\"display_name\":\"URL\",\"is_required\":true,\"zoetro_metadata_key\":\"url\",\"parser_metadata_key\":null},{\"key\":\"container-title\",\"display_name\":\"Website title\",\"zotero_metadata_key\":\"publisher\",\"parser_metadata_key\":null,\"bibtex_key\":\"title\"},{\"key\":\"accessed\",\"display_name\":\"Date accessed\",\"zotero_metadata_key\":\"accessDate\",\"parser_metadata_key\":null},{\"key\":\"issued\",\"display_name\":\"Date published\",\"zotero_metadata_key\":\"date\",\"parser_metadata_key\":\"datePublished\"},{\"key\":\"note\",\"display_name\":\"Extra\",\"zotero_metadata_key\":null,\"parser_metadata_key\":null}],\"field_schema\":{\"title\":\"\",\"URL\":\"\",\"container-title\":\"\",\"accessed\":{\"date-parts\":[[\"yyyy\",\"mm\",\"dd\"]]},\"author\":[{\"family\":\"\",\"given\":\"\"}],\"issued\":{\"date-parts\":[[\"yyyy\",\"mm\",\"dd\"]]},\"note\":\"\"}},{\"display_name\":\"Book Chapter\",\"full_slug\":\"chapter\",\"nlp_identifier\":\"book_chapter\",\"filter_identifier\":\"book-chapter\",\"sequence\":4,\"is_visible\":true,\"search\":{\"placeholder_text\":\"Enter URL or the Title of the Book\",\"rules\":{\"webpage\":true}},\"fields\":[{\"key\":\"title\",\"display_name\":\"Book Chapter title\",\"is_required\":true,\"card_service_key\":\"title\"},{\"key\":\"container-title\",\"display_name\":\"Book title\",\"is_required\":true,\"card_service_key\":null,\"bibtex_key\":\"booktitle\"},{\"key\":\"publisher\",\"display_name\":\"Publisher Name\",\"card_service_key\":\"publisher\"},{\"key\":\"editor\",\"display_name\":\"Editors Name\",\"card_service_key\":null},{\"key\":\"publisher-place\",\"display_name\":\"Publisher Place\",\"bibtex_key\":\"address\",\"card_service_key\":null},{\"key\":\"author\",\"display_name\":\"Contributing Authors\",\"card_service_key\":\"authors\"},{\"key\":\"edition\",\"display_name\":\"Edition\",\"card_service_key\":\"edition\"},{\"key\":\"page\",\"display_name\":\"Pages\",\"card_service_key\":\"pages\"},{\"key\":\"volume\",\"display_name\":\"Volume\",\"card_service_key\":\"volume\"},{\"key\":\"medium\",\"display_name\":\"Medium\",\"card_service_key\":null},{\"key\":\"URL\",\"display_name\":\"URL\",\"card_service_key\":\"paper_urls\"},{\"key\":\"DOI\",\"display_name\":\"DOI\",\"card_service_key\":\"doi\"},{\"key\":\"issued\",\"display_name\":\"Date\",\"card_service_key\":\"date\"},{\"key\":\"source\",\"display_name\":\"Source\",\"card_service_key\":null},{\"key\":\"note\",\"display_name\":\"Extra\",\"card_service_key\":null}],\"field_schema\":{\"title\":\"\",\"container-title\":\"\",\"page\":\"\",\"publisher\":\"\",\"publisher-place\":\"\",\"author\":[{\"family\":\"\",\"given\":\"\"}],\"edition\":\"\",\"editor\":[{\"family\":\"\",\"given\":\"\"}],\"volume\":\"\",\"medium\":\"\",\"URL\":\"\",\"DOI\":\"\",\"issued\":{\"date-parts\":[[\"yyyy\",\"mm\",\"dd\"]]},\"source\":\"\",\"note\":\"\"}},{\"display_name\":\"Patent\",\"full_slug\":\"patent\",\"nlp_identifier\":\"patent\",\"filter_identifier\":\"Patent\",\"sequence\":6,\"is_visible\":true,\"search\":{\"placeholder_text\":\"Enter URL or the title of the Patent\",\"rules\":{\"webpage\":true}},\"fields\":[{\"key\":\"title\",\"display_name\":\"Patent Title\",\"is_required\":true,\"card_service_key\":\"title\"},{\"key\":\"container-title\",\"display_name\":\"Container title\",\"card_service_key\":null,\"bibtex_key\":\"title\"},{\"key\":\"author\",\"display_name\":\"Contributing Authors\",\"card_service_key\":\"authors\"},{\"key\":\"number\",\"display_name\":\"Patent Number\",\"card_service_key\":\"patent_number\"},{\"key\":\"URL\",\"display_name\":\"URL\",\"card_service_key\":\"paper_urls\"},{\"key\":\"issued\",\"display_name\":\"Date\",\"card_service_key\":\"date\"},{\"key\":\"publisher\",\"display_name\":\"Issuing Body\",\"card_service_key\":\"publisher\"},{\"key\":\"note\",\"display_name\":\"Extra\",\"card_service_key\":null}],\"field_schema\":{\"title\":\"\",\"container-title\":\"\",\"publisher\":\"\",\"number\":\"\",\"author\":[{\"family\":\"\",\"given\":\"\"}],\"URL\":\"\",\"issued\":{\"date-parts\":[[\"yyyy\",\"mm\",\"dd\"]]},\"note\":\"\"}},{\"display_name\":\"Report\",\"full_slug\":\"report\",\"nlp_identifier\":\"report\",\"filter_identifier\":\"report\",\"sequence\":7,\"is_visible\":true,\"search\":{\"placeholder_text\":\"Enter URL or the title of the Report\",\"rules\":{\"webpage\":true}},\"fields\":[{\"key\":\"title\",\"display_name\":\"Report Title\",\"is_required\":true,\"card_service_key\":\"title\"},{\"key\":\"container-title\",\"display_name\":\"Website name\",\"card_service_key\":null,\"bibtex_key\":\"title\"},{\"key\":\"publisher\",\"display_name\":\"Publisher Name\",\"card_service_key\":\"publisher\"},{\"key\":\"publisher-place\",\"display_name\":\"Publisher Place\",\"bibtex_key\":\"address\",\"card_service_key\":null},{\"key\":\"author\",\"display_name\":\"Contributing Authors\",\"card_service_key\":\"authors\"},{\"key\":\"accessed\",\"display_name\":\"Access Date\",\"card_service_key\":null},{\"key\":\"URL\",\"display_name\":\"URL\",\"card_service_key\":\"paper_urls\"},{\"key\":\"issued\",\"display_name\":\"Publication Date\",\"card_service_key\":\"date\"},{\"key\":\"note\",\"display_name\":\"Extra\",\"card_service_key\":null}],\"field_schema\":{\"title\":\"\",\"container-title\":\"\",\"publisher\":\"\",\"publisher-place\":\"\",\"author\":[{\"family\":\"\",\"given\":\"\"}],\"accessed\":{\"date-parts\":[[\"yyyy\",\"mm\",\"dd\"]]},\"URL\":\"\",\"issued\":{\"date-parts\":[[\"yyyy\",\"mm\",\"dd\"]]},\"note\":\"\"}},{\"display_name\":\"Thesis\",\"full_slug\":\"thesis\",\"nlp_identifier\":\"thesis\",\"filter_identifier\":\"dissertation\",\"sequence\":8,\"is_visible\":true,\"search\":{\"placeholder_text\":\"Enter URL or the title of the Thesis\",\"rules\":{\"webpage\":true}},\"fields\":[{\"key\":\"title\",\"display_name\":\"Thesis title\",\"is_required\":true,\"card_service_key\":\"title\"},{\"key\":\"author\",\"display_name\":\"Contributing Authors\",\"card_service_key\":\"authors\"},{\"key\":\"issued\",\"display_name\":\"Publication Date\",\"card_service_key\":\"date\"},{\"key\":\"genre\",\"display_name\":\"Thesis Type\",\"card_service_key\":null,\"bibtex_key\":\"type\"},{\"key\":\"URL\",\"display_name\":\"URL\",\"card_service_key\":\"paper_urls\"},{\"key\":\"DOI\",\"display_name\":\"DOI\",\"card_service_key\":\"doi\"},{\"key\":\"publisher\",\"display_name\":\"University/Institution Name\",\"card_service_key\":\"publisher\"},{\"key\":\"note\",\"display_name\":\"Extra\",\"card_service_key\":null}],\"field_schema\":{\"title\":\"\",\"genre\":\"\",\"URL\":\"\",\"DOI\":\"\",\"publisher\":\"\",\"author\":[{\"family\":\"\",\"given\":\"\"}],\"issued\":{\"date-parts\":[[\"yyyy\",\"mm\",\"dd\"]]},\"note\":\"\"}}],\"total\":8,\"is_show\":true,\"query\":{}}",
+          "encoding": ""
+      },
+      "redirectURL": "",
+      "headersSize": -1,
+      "bodySize": -1,
+      "_transferSize": 1628,
+      "_error": null,
+      "_fetchedViaServiceWorker": false
+  },
+  "serverIPAddress": "108.156.144.62",
+  "startedDateTime": "2025-02-21T15:44:08.380Z",
+  "time": 280.71900000213645,
+  "timings": {
+      "blocked": 3.1350000099148603,
+      "dns": -1,
+      "ssl": -1,
+      "connect": -1,
+      "send": 11.732000000000001,
+      "wait": 265.31999998674354,
+      "receive": 0.5320000054780394,
+      "_blocked_queueing": 0.8460000099148601,
+      "_workerStart": -1,
+      "_workerReady": -1,
+      "_workerFetchStart": -1,
+      "_workerRespondWithSettled": -1
+  }
+}

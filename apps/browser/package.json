@@ -1,0 +1,41 @@
+{
+  "name": "browser",
+  "description": "browser extension",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "wxt",
+    "dev:firefox": "wxt -b firefox",
+    "build": "wxt build",
+    "build:firefox": "wxt build -b firefox",
+    "zip": "wxt zip",
+    "zip:firefox": "wxt zip -b firefox",
+    "compile": "vue-tsc --noEmit",
+    "postinstall": "wxt prepare",
+    "test": "NODE_OPTIONS='--experimental-json-modules' vitest run",
+    "test:watch": "vitest watch",
+    "test:update": "vitest -u"
+  },
+  "dependencies": {
+    "demystify-lib": "*",
+    "@demystify/helpers": "*",
+    "@demystify/ui": "*",
+    "lucide-vue-next": "^0.475.0",
+    "@types/har-format": "^1.2.16",
+    "copy-to-clipboard": "^3.3.3",
+    "lodash": "^4.17.21",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.306",
+    "@wxt-dev/auto-icons": "^1.0.2",
+    "@wxt-dev/module-vue": "^1.0.2",
+    "autoprefixer": "^10.4.20",
+    "tailwindcss": "^3.4.17",
+    "typescript": "5.7.3",
+    "vitest": "^3.0.6",
+    "vue-tsc": "^2.2.4",
+    "wxt": "^0.19.27"
+  }
+}

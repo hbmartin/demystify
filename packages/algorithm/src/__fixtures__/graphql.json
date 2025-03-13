@@ -1,0 +1,46 @@
+{
+  "log": {
+    "version": "1.2",
+    "creator": {
+      "name": "WebInspector",
+      "version": "537.36"
+    },
+    "entries": [
+      {
+        "startedDateTime": "2024-05-01T12:00:00.000Z",
+        "time": 200,
+        "request": {
+          "method": "POST",
+          "url": "https://example.com/graphql",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "postData": {
+            "mimeType": "application/json",
+            "text": "{\"query\":\"query getUser { user { name email __typename } }\",\"variables\":{}}"
+          }
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 123,
+            "mimeType": "application/json",
+            "text": "{\"data\": { \"user\": { \"name\": \"John Doe\", \"email\": \"john.doe@example.com\", \"__typename\": \"User\" } }}"
+          }
+        }
+      }
+    ]
+  }
+}

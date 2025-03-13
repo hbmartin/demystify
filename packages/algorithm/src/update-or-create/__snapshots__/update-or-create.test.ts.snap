@@ -1,0 +1,950 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`findOrCreate REST JSON > when rootNode is not provided, return a new root node matching snapshot 1`] = `
+{
+  "childrenDynamic": [],
+  "childrenStatic": {
+    "v1": {
+      "childrenDynamic": [],
+      "childrenStatic": {
+        "pets": {
+          "childrenDynamic": [],
+          "childrenStatic": {},
+          "data": {
+            "methods": {
+              "POST": {
+                "request": {
+                  "application/json": {
+                    "body": {
+                      "properties": {
+                        "age": {
+                          "type": "integer",
+                        },
+                        "name": {
+                          "type": "string",
+                        },
+                        "tags": {
+                          "items": {
+                            "type": "string",
+                          },
+                          "type": "array",
+                        },
+                        "type": {
+                          "type": "string",
+                        },
+                        "vaccinated": {
+                          "type": "boolean",
+                        },
+                      },
+                      "required": [
+                        "name",
+                        "type",
+                        "age",
+                        "vaccinated",
+                        "tags",
+                      ],
+                      "type": "object",
+                    },
+                    "kind": "rest-json",
+                    "mostRecent": {
+                      "age": 3,
+                      "name": "Fluffy",
+                      "tags": [
+                        "friendly",
+                        "indoor",
+                      ],
+                      "type": "cat",
+                      "vaccinated": true,
+                    },
+                  },
+                },
+                "requestHeaders": [],
+                "response": {
+                  "201": {
+                    "application/json": {
+                      "body": {
+                        "properties": {
+                          "age": {
+                            "type": "integer",
+                          },
+                          "created_at": {
+                            "type": "string",
+                          },
+                          "id": {
+                            "type": "integer",
+                          },
+                          "name": {
+                            "type": "string",
+                          },
+                          "tags": {
+                            "items": {
+                              "type": "string",
+                            },
+                            "type": "array",
+                          },
+                          "type": {
+                            "type": "string",
+                          },
+                          "vaccinated": {
+                            "type": "boolean",
+                          },
+                        },
+                        "required": [
+                          "id",
+                          "name",
+                          "type",
+                          "age",
+                          "vaccinated",
+                          "tags",
+                          "created_at",
+                        ],
+                        "type": "object",
+                      },
+                      "kind": "rest-json",
+                      "mostRecent": {
+                        "age": 3,
+                        "created_at": "2023-05-20T10:30:15.123Z",
+                        "id": 12345,
+                        "name": "Fluffy",
+                        "tags": [
+                          "friendly",
+                          "indoor",
+                        ],
+                        "type": "cat",
+                        "vaccinated": true,
+                      },
+                    },
+                  },
+                },
+                "responseHeaders": [],
+              },
+            },
+            "mostRecentPathname": "/v1/pets",
+            "protocol": "https:",
+          },
+          "key": "pets",
+          "parent": [Circular],
+        },
+      },
+      "data": null,
+      "key": "v1",
+      "parent": [Circular],
+    },
+  },
+  "data": null,
+  "key": "api.example.com",
+  "parent": null,
+}
+`;
+
+exports[`findOrCreate REST JSON alternative > merges harEntry into an existing node 1`] = `
+{
+  "childrenDynamic": [],
+  "childrenStatic": {
+    "v1": {
+      "childrenDynamic": [],
+      "childrenStatic": {
+        "pets": {
+          "childrenDynamic": [],
+          "childrenStatic": {},
+          "data": {
+            "methods": {
+              "POST": {
+                "request": {
+                  "application/json": {
+                    "body": {
+                      "properties": {
+                        "age": {
+                          "type": "integer",
+                        },
+                        "name": {
+                          "type": "string",
+                        },
+                        "tags": {
+                          "items": {
+                            "type": "string",
+                          },
+                          "type": "array",
+                        },
+                        "type": {
+                          "type": "string",
+                        },
+                        "vaccinated": {
+                          "type": "boolean",
+                        },
+                      },
+                      "required": [
+                        "name",
+                        "type",
+                        "age",
+                        "vaccinated",
+                        "tags",
+                      ],
+                      "type": "object",
+                    },
+                    "kind": "rest-json",
+                    "mostRecent": {
+                      "age": 3,
+                      "name": "Fluffy",
+                      "tags": [
+                        "friendly",
+                        "indoor",
+                      ],
+                      "type": "cat",
+                      "vaccinated": true,
+                    },
+                  },
+                },
+                "requestHeaders": [],
+                "response": {
+                  "201": {
+                    "application/json": {
+                      "body": {
+                        "properties": {
+                          "age": {
+                            "type": "integer",
+                          },
+                          "created_at": {
+                            "type": "string",
+                          },
+                          "id": {
+                            "type": "integer",
+                          },
+                          "name": {
+                            "type": "string",
+                          },
+                          "tags": {
+                            "items": {
+                              "type": "string",
+                            },
+                            "type": "array",
+                          },
+                          "type": {
+                            "type": "string",
+                          },
+                          "vaccinated": {
+                            "type": "boolean",
+                          },
+                        },
+                        "required": [
+                          "id",
+                          "name",
+                          "type",
+                          "age",
+                          "vaccinated",
+                          "tags",
+                          "created_at",
+                        ],
+                        "type": "object",
+                      },
+                      "kind": "rest-json",
+                      "mostRecent": {
+                        "age": 3,
+                        "created_at": "2023-05-20T10:30:15.123Z",
+                        "id": 12345,
+                        "name": "Fluffy",
+                        "tags": [
+                          "friendly",
+                          "indoor",
+                        ],
+                        "type": "cat",
+                        "vaccinated": true,
+                      },
+                    },
+                  },
+                },
+                "responseHeaders": [],
+              },
+            },
+            "mostRecentPathname": "/v1/pets",
+            "protocol": "https:",
+          },
+          "key": "pets",
+          "parent": [Circular],
+        },
+        "track": {
+          "childrenDynamic": [],
+          "childrenStatic": {},
+          "data": {
+            "methods": {
+              "POST": {
+                "cookies": {},
+                "queryParameters": {
+                  "alt": "json",
+                  "key": "abc",
+                },
+                "request": {
+                  "application/json": {
+                    "body": {
+                      "properties": {
+                        "test": {
+                          "type": "string",
+                        },
+                      },
+                      "required": [
+                        "test",
+                      ],
+                      "type": "object",
+                    },
+                    "kind": "rest-json",
+                    "mostRecent": {
+                      "test": "integer",
+                    },
+                  },
+                },
+                "requestHeaders": [],
+                "response": {
+                  "200": {
+                    "application/json": {
+                      "body": {
+                        "properties": {
+                          "test": {
+                            "type": "integer",
+                          },
+                        },
+                        "required": [
+                          "test",
+                        ],
+                        "type": "object",
+                      },
+                      "kind": "rest-json",
+                      "mostRecent": {
+                        "test": 1,
+                      },
+                    },
+                  },
+                },
+                "responseHeaders": [],
+              },
+            },
+            "mostRecentPathname": "/v1/track",
+            "protocol": "https:",
+          },
+          "key": "track",
+          "parent": [Circular],
+        },
+      },
+      "data": null,
+      "key": "v1",
+      "parent": [Circular],
+    },
+  },
+  "data": null,
+  "key": "www.example.com",
+  "parent": null,
+}
+`;
+
+exports[`findOrCreate REST JSON alternative > when rootNode is not provided, return a new root node matching snapshot 1`] = `
+{
+  "childrenDynamic": [],
+  "childrenStatic": {
+    "v1": {
+      "childrenDynamic": [],
+      "childrenStatic": {
+        "track": {
+          "childrenDynamic": [],
+          "childrenStatic": {},
+          "data": {
+            "methods": {
+              "POST": {
+                "cookies": {},
+                "queryParameters": {
+                  "alt": "json",
+                  "key": "abc",
+                },
+                "request": {
+                  "application/json": {
+                    "body": {
+                      "properties": {
+                        "test": {
+                          "type": "string",
+                        },
+                      },
+                      "required": [
+                        "test",
+                      ],
+                      "type": "object",
+                    },
+                    "kind": "rest-json",
+                    "mostRecent": {
+                      "test": "integer",
+                    },
+                  },
+                },
+                "requestHeaders": [],
+                "response": {
+                  "200": {
+                    "application/json": {
+                      "body": {
+                        "properties": {
+                          "test": {
+                            "type": "integer",
+                          },
+                        },
+                        "required": [
+                          "test",
+                        ],
+                        "type": "object",
+                      },
+                      "kind": "rest-json",
+                      "mostRecent": {
+                        "test": 1,
+                      },
+                    },
+                  },
+                },
+                "responseHeaders": [],
+              },
+            },
+            "mostRecentPathname": "/v1/track",
+            "protocol": "https:",
+          },
+          "key": "track",
+          "parent": [Circular],
+        },
+      },
+      "data": null,
+      "key": "v1",
+      "parent": [Circular],
+    },
+  },
+  "data": null,
+  "key": "www.example.com",
+  "parent": null,
+}
+`;
+
+exports[`findOrCreate XML > merges data into an existing node 1`] = `
+{
+  "childrenDynamic": [],
+  "childrenStatic": {
+    "v1": {
+      "childrenDynamic": [],
+      "childrenStatic": {
+        "pets": {
+          "childrenDynamic": [],
+          "childrenStatic": {},
+          "data": {
+            "methods": {
+              "POST": {
+                "request": {
+                  "application/xml": {
+                    "body": {
+                      "properties": {
+                        "pet": {
+                          "properties": {
+                            "children": {
+                              "items": {
+                                "properties": {
+                                  "age": {
+                                    "properties": {
+                                      "content": {
+                                        "type": "string",
+                                      },
+                                    },
+                                    "required": [
+                                      "content",
+                                    ],
+                                    "type": "object",
+                                  },
+                                  "name": {
+                                    "properties": {
+                                      "content": {
+                                        "type": "string",
+                                      },
+                                    },
+                                    "required": [
+                                      "content",
+                                    ],
+                                    "type": "object",
+                                  },
+                                  "tags": {
+                                    "properties": {
+                                      "children": {
+                                        "items": {
+                                          "properties": {
+                                            "tag": {
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string",
+                                                },
+                                              },
+                                              "required": [
+                                                "content",
+                                              ],
+                                              "type": "object",
+                                            },
+                                          },
+                                          "required": [
+                                            "tag",
+                                          ],
+                                          "type": "object",
+                                        },
+                                        "type": "array",
+                                      },
+                                    },
+                                    "required": [
+                                      "children",
+                                    ],
+                                    "type": "object",
+                                  },
+                                  "type": {
+                                    "properties": {
+                                      "content": {
+                                        "type": "string",
+                                      },
+                                    },
+                                    "required": [
+                                      "content",
+                                    ],
+                                    "type": "object",
+                                  },
+                                  "vaccinated": {
+                                    "properties": {
+                                      "content": {
+                                        "type": "string",
+                                      },
+                                    },
+                                    "required": [
+                                      "content",
+                                    ],
+                                    "type": "object",
+                                  },
+                                },
+                                "type": "object",
+                              },
+                              "type": "array",
+                            },
+                          },
+                          "required": [
+                            "children",
+                          ],
+                          "type": "object",
+                        },
+                      },
+                      "required": [
+                        "pet",
+                      ],
+                      "type": "object",
+                    },
+                    "kind": "rest-xml",
+                    "mostRecent": "<?xml version="1.0" encoding="UTF-8"?><pet><name>Fluffy</name><type>cat</type><age>3</age><vaccinated>true</vaccinated><tags><tag>friendly</tag><tag>indoor</tag></tags></pet>",
+                  },
+                },
+                "requestHeaders": [],
+                "response": {
+                  "201": {
+                    "application/xml": {
+                      "body": {
+                        "properties": {
+                          "pet": {
+                            "properties": {
+                              "children": {
+                                "items": {
+                                  "properties": {
+                                    "age": {
+                                      "properties": {
+                                        "content": {
+                                          "type": "string",
+                                        },
+                                      },
+                                      "required": [
+                                        "content",
+                                      ],
+                                      "type": "object",
+                                    },
+                                    "created_at": {
+                                      "properties": {
+                                        "content": {
+                                          "type": "string",
+                                        },
+                                      },
+                                      "required": [
+                                        "content",
+                                      ],
+                                      "type": "object",
+                                    },
+                                    "id": {
+                                      "properties": {
+                                        "content": {
+                                          "type": "string",
+                                        },
+                                      },
+                                      "required": [
+                                        "content",
+                                      ],
+                                      "type": "object",
+                                    },
+                                    "name": {
+                                      "properties": {
+                                        "content": {
+                                          "type": "string",
+                                        },
+                                      },
+                                      "required": [
+                                        "content",
+                                      ],
+                                      "type": "object",
+                                    },
+                                    "tags": {
+                                      "properties": {
+                                        "children": {
+                                          "items": {
+                                            "properties": {
+                                              "tag": {
+                                                "properties": {
+                                                  "content": {
+                                                    "type": "string",
+                                                  },
+                                                },
+                                                "required": [
+                                                  "content",
+                                                ],
+                                                "type": "object",
+                                              },
+                                            },
+                                            "required": [
+                                              "tag",
+                                            ],
+                                            "type": "object",
+                                          },
+                                          "type": "array",
+                                        },
+                                      },
+                                      "required": [
+                                        "children",
+                                      ],
+                                      "type": "object",
+                                    },
+                                    "type": {
+                                      "properties": {
+                                        "content": {
+                                          "type": "string",
+                                        },
+                                      },
+                                      "required": [
+                                        "content",
+                                      ],
+                                      "type": "object",
+                                    },
+                                    "vaccinated": {
+                                      "properties": {
+                                        "content": {
+                                          "type": "string",
+                                        },
+                                      },
+                                      "required": [
+                                        "content",
+                                      ],
+                                      "type": "object",
+                                    },
+                                  },
+                                  "type": "object",
+                                },
+                                "type": "array",
+                              },
+                            },
+                            "required": [
+                              "children",
+                            ],
+                            "type": "object",
+                          },
+                        },
+                        "required": [
+                          "pet",
+                        ],
+                        "type": "object",
+                      },
+                      "kind": "rest-xml",
+                      "mostRecent": "<?xml version="1.0" encoding="UTF-8"?><pet><id>12345</id><name>Fluffy</name><type>cat</type><age>3</age><vaccinated>true</vaccinated><tags><tag>friendly</tag><tag>indoor</tag></tags><created_at>2023-05-20T10:30:15.123Z</created_at></pet>",
+                    },
+                  },
+                },
+                "responseHeaders": [],
+              },
+            },
+            "mostRecentPathname": "/v1/pets",
+            "protocol": "https:",
+          },
+          "key": "pets",
+          "parent": [Circular],
+        },
+      },
+      "data": null,
+      "key": "v1",
+      "parent": [Circular],
+    },
+  },
+  "data": null,
+  "key": "api.example.com",
+  "parent": null,
+}
+`;
+
+exports[`findOrCreate XML > when rootNode is not provided, return a new root node matching snapshot 1`] = `
+{
+  "childrenDynamic": [],
+  "childrenStatic": {
+    "v1": {
+      "childrenDynamic": [],
+      "childrenStatic": {
+        "pets": {
+          "childrenDynamic": [],
+          "childrenStatic": {},
+          "data": {
+            "methods": {
+              "POST": {
+                "request": {
+                  "application/xml": {
+                    "body": {
+                      "properties": {
+                        "pet": {
+                          "properties": {
+                            "children": {
+                              "items": {
+                                "properties": {
+                                  "age": {
+                                    "properties": {
+                                      "content": {
+                                        "type": "string",
+                                      },
+                                    },
+                                    "required": [
+                                      "content",
+                                    ],
+                                    "type": "object",
+                                  },
+                                  "name": {
+                                    "properties": {
+                                      "content": {
+                                        "type": "string",
+                                      },
+                                    },
+                                    "required": [
+                                      "content",
+                                    ],
+                                    "type": "object",
+                                  },
+                                  "tags": {
+                                    "properties": {
+                                      "children": {
+                                        "items": {
+                                          "properties": {
+                                            "tag": {
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string",
+                                                },
+                                              },
+                                              "required": [
+                                                "content",
+                                              ],
+                                              "type": "object",
+                                            },
+                                          },
+                                          "required": [
+                                            "tag",
+                                          ],
+                                          "type": "object",
+                                        },
+                                        "type": "array",
+                                      },
+                                    },
+                                    "required": [
+                                      "children",
+                                    ],
+                                    "type": "object",
+                                  },
+                                  "type": {
+                                    "properties": {
+                                      "content": {
+                                        "type": "string",
+                                      },
+                                    },
+                                    "required": [
+                                      "content",
+                                    ],
+                                    "type": "object",
+                                  },
+                                  "vaccinated": {
+                                    "properties": {
+                                      "content": {
+                                        "type": "string",
+                                      },
+                                    },
+                                    "required": [
+                                      "content",
+                                    ],
+                                    "type": "object",
+                                  },
+                                },
+                                "type": "object",
+                              },
+                              "type": "array",
+                            },
+                          },
+                          "required": [
+                            "children",
+                          ],
+                          "type": "object",
+                        },
+                      },
+                      "required": [
+                        "pet",
+                      ],
+                      "type": "object",
+                    },
+                    "kind": "rest-xml",
+                    "mostRecent": "<?xml version="1.0" encoding="UTF-8"?><pet><name>Fluffy</name><type>cat</type><age>3</age><vaccinated>true</vaccinated><tags><tag>friendly</tag><tag>indoor</tag></tags></pet>",
+                  },
+                },
+                "requestHeaders": [],
+                "response": {
+                  "201": {
+                    "application/xml": {
+                      "body": {
+                        "properties": {
+                          "pet": {
+                            "properties": {
+                              "children": {
+                                "items": {
+                                  "properties": {
+                                    "age": {
+                                      "properties": {
+                                        "content": {
+                                          "type": "string",
+                                        },
+                                      },
+                                      "required": [
+                                        "content",
+                                      ],
+                                      "type": "object",
+                                    },
+                                    "created_at": {
+                                      "properties": {
+                                        "content": {
+                                          "type": "string",
+                                        },
+                                      },
+                                      "required": [
+                                        "content",
+                                      ],
+                                      "type": "object",
+                                    },
+                                    "id": {
+                                      "properties": {
+                                        "content": {
+                                          "type": "string",
+                                        },
+                                      },
+                                      "required": [
+                                        "content",
+                                      ],
+                                      "type": "object",
+                                    },
+                                    "name": {
+                                      "properties": {
+                                        "content": {
+                                          "type": "string",
+                                        },
+                                      },
+                                      "required": [
+                                        "content",
+                                      ],
+                                      "type": "object",
+                                    },
+                                    "tags": {
+                                      "properties": {
+                                        "children": {
+                                          "items": {
+                                            "properties": {
+                                              "tag": {
+                                                "properties": {
+                                                  "content": {
+                                                    "type": "string",
+                                                  },
+                                                },
+                                                "required": [
+                                                  "content",
+                                                ],
+                                                "type": "object",
+                                              },
+                                            },
+                                            "required": [
+                                              "tag",
+                                            ],
+                                            "type": "object",
+                                          },
+                                          "type": "array",
+                                        },
+                                      },
+                                      "required": [
+                                        "children",
+                                      ],
+                                      "type": "object",
+                                    },
+                                    "type": {
+                                      "properties": {
+                                        "content": {
+                                          "type": "string",
+                                        },
+                                      },
+                                      "required": [
+                                        "content",
+                                      ],
+                                      "type": "object",
+                                    },
+                                    "vaccinated": {
+                                      "properties": {
+                                        "content": {
+                                          "type": "string",
+                                        },
+                                      },
+                                      "required": [
+                                        "content",
+                                      ],
+                                      "type": "object",
+                                    },
+                                  },
+                                  "type": "object",
+                                },
+                                "type": "array",
+                              },
+                            },
+                            "required": [
+                              "children",
+                            ],
+                            "type": "object",
+                          },
+                        },
+                        "required": [
+                          "pet",
+                        ],
+                        "type": "object",
+                      },
+                      "kind": "rest-xml",
+                      "mostRecent": "<?xml version="1.0" encoding="UTF-8"?><pet><id>12345</id><name>Fluffy</name><type>cat</type><age>3</age><vaccinated>true</vaccinated><tags><tag>friendly</tag><tag>indoor</tag></tags><created_at>2023-05-20T10:30:15.123Z</created_at></pet>",
+                    },
+                  },
+                },
+                "responseHeaders": [],
+              },
+            },
+            "mostRecentPathname": "/v1/pets",
+            "protocol": "https:",
+          },
+          "key": "pets",
+          "parent": [Circular],
+        },
+      },
+      "data": null,
+      "key": "v1",
+      "parent": [Circular],
+    },
+  },
+  "data": null,
+  "key": "api.example.com",
+  "parent": null,
+}
+`;

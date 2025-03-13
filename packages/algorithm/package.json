@@ -1,0 +1,46 @@
+{
+  "name": "demystify-lib",
+  "version": "1.0.1",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.es.js",
+  "module": "./dist/index.es.js",
+  "browser": "./dist/index.umd.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "lint": "eslint . --max-warnings 0",
+    "build": "vite build",
+    "prepack": "npm run build",
+    "check-types": "tsc --noEmit",
+    "test": "NODE_OPTIONS='--experimental-json-modules' vitest run",
+    "test:watch": "vitest watch",
+    "test:update": "vitest -u"
+  },
+  "devDependencies": {
+    "@demystify/eslint-config": "*",
+    "@demystify/typescript-config": "*",
+    "@seriousme/openapi-schema-validator": "^2.3.1",
+    "@turbo/gen": "^2.4.2",
+    "@types/content-type": "^1.1.8",
+    "@types/lodash": "^4.17.15",
+    "@types/uri-template-lite": "^19.12.3",
+    "eslint": "^9.21.0",
+    "typescript": "5.7.3",
+    "vite": "^6.1.1",
+    "vitest": "^3.0.6"
+  },
+  "dependencies": {
+    "@types/har-format": "^1.2.16",
+    "content-type": "^1.0.5",
+    "decode-uri-component": "^0.4.1",
+    "fast-querystring": "^1.1.2",
+    "genson-js": "^0.0.8",
+    "json-stable-stringify": "^1.2.1",
+    "lodash": "^4.17.21",
+    "openapi3-ts": "^4.4.0",
+    "simple-xml-to-json": "^1.2.3",
+    "uri-template-lite": "^23.4.0"
+  }
+}

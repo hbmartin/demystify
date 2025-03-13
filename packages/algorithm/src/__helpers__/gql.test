@@ -1,0 +1,71 @@
+import { describe, it, expect } from "vitest";
+import { GraphQlManager } from "./gql";
+import { HarGraphQL } from "./types/index.js";
+
+it("initializes empty data", () => {
+  const manager = new GraphQlManager();
+  expect(manager.data).toEqual({});
+});
+
+it("upserts data by host", () => {
+  const manager = new GraphQlManager();
+  const sample = {
+    request: {
+      url: "https://example.com/graphql",
+      method: "POST",
+      postData: {
+        text: '{"query":"{ user(id: \\"1\\") { name email __typename } }"}',
+      },
+    },
+    response: {
+      status: 200,
+      content: {
+        text: '{"data": { "user": { "name": "John Doe", "email": "john.doe@example.com", "__typename": "User" } }}',
+      },
+    },
+  } as HarGraphQL;
+  manager.upsert(sample);
+  expect(Object.keys(manager.data).length).toBe(1);
+  expect(manager.data["example.com"]).toBeDefined();
+});
+
+it("does not crash on malformed URL", () => {
+  const manager = new GraphQlManager();
+  const sample = {
+    request: { url: "invalid-url", method: "POST" },
+    response: { status: 400 },
+  } as HarGraphQL;
+  expect(() => manager.upsert(sample)).toThrow();
+});
+
+it("merges multiple queries with different names to the same host", () => {
+  const manager = new GraphQlManager();
+  const query1 = {
+    request: {
+      url: "https://example.com/graphql",
+      method: "POST", 
+      postData: {
+        text: '{"query":"{ user(id: \\"1\\") { name } }"}',
+      },
+    },
+    response: { status: 200 }
+  } as HarGraphQL;
+
+  const query2 = {
+    request: {
+      url: "https://example.com/graphql", 
+      method: "POST",
+      postData: {
+        text: '{"query":"{ post { title } }"}',
+      },
+    },
+    response: { status: 200 }
+  } as HarGraphQL;
+
+  manager.upsert(query1);
+  manager.upsert(query2);
+  
+  expect(Object.keys(manager.data).length).toBe(1);
+  expect(manager.data).toMatchSnapshot();
+});
+
