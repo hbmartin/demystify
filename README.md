@@ -39,8 +39,6 @@
   </p>
 </div>
 
-
-
 <!-- TABLE OF CONTENTS -->
 <details open>
   <summary>Table of Contents</summary>
@@ -75,8 +73,6 @@
     <li><a href="#license">License</a></li>
   </ol>
 </details>
-
-
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -194,14 +190,6 @@ See test files for more information on usage.
       src="./assets/2_mainmenu.png"
       alt="some paths in the openapi specification, including one that has been parameterised" width="400">
     <p>Watch live network traffic or a HAR file become API specifications<br/> that update in real time in response to new requests</p>
-  </div>
-
-  <br />
-  <div align="center">
-    <img
-      src="./assets/1_showing_multiple.png"
-      alt="some paths in the openapi specification, including one that has been parameterised" width="400">
-    <p>Demystify identifies path parameters automatically<br/> without manual input</p>
   </div>
 
   <br />
