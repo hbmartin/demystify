@@ -45,6 +45,11 @@
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li>
+          <a href="#features">Features</a>
+        </li>
+      </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
@@ -82,6 +87,16 @@ https://github.com/user-attachments/assets/5fdd075f-6191-4714-8fea-22b81c6459a2
 Demystify is a suite of tools designed to help understand API behaviour. It generates accurate OpenAPI 3.1 specifications in real time from live network traffic or HAR files. The desktop app achieves this with a built-in proxy, while the browser extension works automatically for all requests in a given tab. The CLI tool works directly on files, and the library can be used in other contexts such as middleware to programmatically generate API specifications.
 
 It identifies path parameters automatically without manual intervention. Data in the generated specification reflects all observed information across multiple status codes and mime types for request and response headers, bodies, query parameters, path parameters, and cookies for each endpoint.
+
+### Features
+
+- Everything in [OpenAPI DevTools](https://github.com/AndrewWalsh/openapi-devtools)
+- Identifies [path parameters](https://www.abstractapi.com/guides/api-glossary/path-parameters) automatically
+- Is available as a desktop app that uses a proxy to generate specifications in real time (e.g. a real time version of [mitm2swagger](https://github.com/alufers/mitmproxy2swagger) that supports OpenAPI 3.1)
+- Has a website and command line tool that can generate OpenAPI specifications from HAR files (e.g. [har-to-openapi](https://github.com/jonluca/har-to-openapi) or [openapi-autospec](https://github.com/Adawg4/openapi-autospec))
+- Uses a published library that can generate API specifications for any API in middleware, DevOps integrations, or any environment
+- Can generate curl commands, client code, and send API requests via an API client that populates automatically via [Scalar](https://github.com/scalar/scalar)
+- Is agnostic to API semantics and may translate into different versions of OpenAPI, or reverse engineer other HTTP-based standards such as GraphQL
 
 
 
