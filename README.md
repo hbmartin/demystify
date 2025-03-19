@@ -31,7 +31,7 @@
     <a href="https://github.com/AndrewWalsh/demystify"><strong>Understand API Behaviour »</strong></a>
     <br />
     <br />
-    <a href="https://andrewwalsh.github.io/demystify">View Demo</a>
+    <a href="https://andrewwalsh.github.io/demystify/">View Demo</a>
     &middot;
     <a href="https://github.com/AndrewWalsh/demystify/issues/new?labels=bug">Report Bug</a>
     &middot;
@@ -91,12 +91,12 @@ It identifies path parameters automatically without manual intervention. Data in
 ### Features
 
 - Everything in [OpenAPI DevTools](https://github.com/AndrewWalsh/openapi-devtools)
-- Identifies [path parameters](https://www.abstractapi.com/guides/api-glossary/path-parameters) automatically
-- Is available as a desktop app that uses a proxy to generate specifications in real time (e.g. a real time version of [mitm2swagger](https://github.com/alufers/mitmproxy2swagger) that supports OpenAPI 3.1)
-- Has a website and command line tool that can generate OpenAPI specifications from HAR files (e.g. [har-to-openapi](https://github.com/jonluca/har-to-openapi) or [openapi-autospec](https://github.com/Adawg4/openapi-autospec))
-- Uses a published library that can generate API specifications for any API in middleware, DevOps integrations, or any environment
-- Can generate curl commands, client code, and send API requests via an API client that populates automatically via [Scalar](https://github.com/scalar/scalar)
-- Is agnostic to API semantics and may translate into different versions of OpenAPI, or reverse engineer other HTTP-based standards such as GraphQL
+- Automated identification of [path parameters](https://www.abstractapi.com/guides/api-glossary/path-parameters)
+- A desktop app that uses a proxy to generate specifications in real time (e.g. a real time version of [mitm2swagger](https://github.com/alufers/mitmproxy2swagger) that supports OpenAPI 3.1)
+- A [website](https://andrewwalsh.github.io/demystify/) and [command line tool](https://www.npmjs.com/package/demystify) that generates OpenAPI specifications from HAR files (e.g. [har-to-openapi](https://github.com/jonluca/har-to-openapi) or [openapi-autospec](https://github.com/Adawg4/openapi-autospec))
+- A [library](https://www.npmjs.com/package/demystify-lib) that maintains a representation of an API based on observed network traffic, and can generate OpenAPI specifications from that representation
+- An integrated API client that populates automatically and can generate code such as curl commands via [Scalar](https://github.com/scalar/scalar)
+- The capacity to generate different versions of OpenAPI or other HTTP-based standards such as GraphQL
 
 
 
