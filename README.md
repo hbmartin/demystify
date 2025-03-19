@@ -94,7 +94,7 @@ It identifies path parameters automatically without manual intervention. Data in
 - Automated identification of [path parameters](https://www.abstractapi.com/guides/api-glossary/path-parameters)
 - A desktop app that uses a proxy to generate specifications in real time (e.g. a real time version of [mitm2swagger](https://github.com/alufers/mitmproxy2swagger) that supports OpenAPI 3.1)
 - A [website](https://andrewwalsh.github.io/demystify/) and [command line tool](https://www.npmjs.com/package/demystify) that generates OpenAPI specifications from HAR files (e.g. [har-to-openapi](https://github.com/jonluca/har-to-openapi) or [openapi-autospec](https://github.com/Adawg4/openapi-autospec))
-- A [library](https://www.npmjs.com/package/demystify-lib) that learns from network traffic and discovers API topoography in real time and can generate a representation of an API such as OpenAPI
+- A [library](https://www.npmjs.com/package/demystify-lib) that learns from network traffic in real time, discovers API topoography, and can generate a representation of an API such as the OpenAPI standard
 - An integrated API client that populates automatically and can generate code such as curl commands via [Scalar](https://github.com/scalar/scalar)
 - The capacity to generate different versions of OpenAPI or other HTTP-based standards such as GraphQL
 
