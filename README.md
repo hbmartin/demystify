@@ -28,7 +28,7 @@
   <p align="center">
     Generate OpenAPI Specifications in Real Time for Any API
     <br />
-    <a href="https://github.com/AndrewWalsh/demystify"><strong>Understand API Behaviour »</strong></a>
+    <a href="https://apiconference.net/automating-openapi-specs-api-documentation/"><strong>Read the Whitepaper »</strong></a>
     <br />
     <br />
     <a href="https://andrewwalsh.github.io/demystify/">View Demo</a>
@@ -40,7 +40,7 @@
 </div>
 
 <!-- TABLE OF CONTENTS -->
-<details open>
+<details>
   <summary>Table of Contents</summary>
   <ol>
     <li>
