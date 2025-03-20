@@ -206,14 +206,6 @@ See test files for more information on usage.
       alt="some paths in the openapi specification, including one that has been parameterised" width="400">
     <p>Watch live network traffic or a HAR file become API specifications<br/> that update in real time in response to new requests</p>
   </div>
-
-  <br />
-  <div align="center">
-    <img
-      src="./assets/3_api_client.png"
-      alt="some paths in the openapi specification, including one that has been parameterised" width="400">
-    <p>The browser extension can use <a href="https://github.com/scalar/scalar">Scalar's</a> built in API client<br/>with prepopulated fields froms recent values</p>
-  </div>
 </div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -231,7 +223,7 @@ If you have a suggestion that would make this better, please fork the repo and c
 2. Install and build `npm i && npm run build`
 3. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
 4. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-5. Test your changes, e.g. by loading the browser extension from `apps/browser/.output/chrome-mv3/`
+5. Test your changes, e.g. by loading the browser extension with `npm run dev` or validating the build in `apps/browser/.output`
 6. Push to the Branch (`git push origin feature/AmazingFeature`)
 7. Open a Pull Request
 

@@ -1,5 +1,5 @@
 {
-  "name": "Demystify",
+  "name": "demystify-browser",
   "description": "Demystify automatically generates OpenAPI specs from HAR or live network traffic via a proxy",
   "private": true,
   "version": "1.0.0",
