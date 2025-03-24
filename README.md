@@ -131,17 +131,15 @@ The browser extension can be accessed in the DevTools of your chosen browser. Wh
 
 #### Chrome
 
-> I have submitted this to Chrome Web Store and am awaiting approval. After that the link will be updated.
+[![Download in the Chrome Web Store][chrome-shield]][chrome-url]
 
 Locate the tool in [Chrome DevTools](https://developer.chrome.com/docs/devtools).
 
-[![Download in the Chrome Web Store][chrome-shield]][chrome-url]
-
 #### Firefox
 
-Locate the tool in [Firefox DevTools](https://firefox-source-docs.mozilla.org/devtools-user/).
-
 [![Download in the Firefox Add-on Store][firefox-shield]][firefox-url]
+
+Locate the tool in [Firefox DevTools](https://firefox-source-docs.mozilla.org/devtools-user/).
 
 ### CLI
 
@@ -245,7 +243,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 [license-url]: https://github.com/AndrewWalsh/demystify/blob/main/LICENSE.txt
 [license-shield]: https://img.shields.io/github/license/AndrewWalsh/demystify
 <!-- Browser -->
-[chrome-url]: / 
+[chrome-url]: https://chromewebstore.google.com/detail/demystify-browser/kndebpfokhpnobjefobnfcidacfannii?authuser=0&hl=en
 [chrome-shield]: https://img.shields.io/badge/Google%20Chrome-4285F4?logo=GoogleChrome&logoColor=white
 [firefox-url]: https://addons.mozilla.org/en-US/firefox/addon/demystify
 [firefox-shield]: https://img.shields.io/badge/Firefox-FF7139?logo=FirefoxBrowser&logoColor=white
