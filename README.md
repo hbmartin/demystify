@@ -28,7 +28,7 @@
   <p align="center">
     Generate OpenAPI Specifications in Real Time for Any API
     <br />
-    <a href="https://apiconference.net/automating-openapi-specs-api-documentation/"><strong>Read the Whitepaper »</strong></a>
+    <a href="https://www.awalsh.io/projects/demystify"><strong>Read more about how it works »</strong></a>
     <br />
     <br />
     <a href="https://andrewwalsh.github.io/demystify/">View Demo</a>
