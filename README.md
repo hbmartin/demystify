@@ -215,6 +215,8 @@ See test files for more information on usage.
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
+For architecture and process flow diagrams, see the auto generated [DeepWiki](https://deepwiki.com/AndrewWalsh/demystify)
+
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 
 1. Fork the Project
